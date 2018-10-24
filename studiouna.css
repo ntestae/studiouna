@@ -1,0 +1,77 @@
+html, body { 
+	height: 100%;
+}
+
+* { 
+	margin: 0; 
+	padding: 0;
+}
+
+#cabecalho div {
+	height: 10vh;
+}
+
+#slideshow img {
+	margin: auto;
+}
+
+#slideshow div {
+	height: 90vh;
+	background-color: black;
+}
+
+#portfolio div {
+	height: 30vh;
+}
+
+#cont-bio div {
+	height: 85vh;
+	background-color: black;
+}
+
+#rodape div {
+	height: 15vh;
+}
+
+img {
+	max-height: 100vh;
+	max-width: 100vw;
+}
+
+.section-title {
+	-webkit-text-fill-color: white;
+    font-family: Corbel;
+	font-size: 14px;
+    text-align: center;
+    padding: 15px;
+}
+
+.carousel-inner {
+	
+    margin: auto;
+}
+
+.categorias {
+	-webkit-text-fill-color: white;
+    font-size: -webkit-xxx-large;
+	margin: auto;
+	font-family: Corbel;
+}
+
+.center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	display: block;
+}
+
+.transicao {
+	transition: all 0.5s ease;
+	background-color: #5b0165;
+}
+
+.transicao:hover {
+	background-color: #2d0132;
+}
+
