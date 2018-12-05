@@ -20,13 +20,13 @@ html, body {
 	background-color: black;
 }
 
-#portfolio div {
-	height: 30vh;
+.item {
+	height: 65vh;
 }
 
 #cont-bio div {
 	height: 85vh;
-	background-color: black;
+	float: right;
 }
 
 #rodape div {
@@ -52,8 +52,15 @@ img {
 }
 
 .categorias {
-	-webkit-text-fill-color: white;
+	-webkit-text-fill-color: black;
     font-size: -webkit-xxx-large;
+	margin: auto;
+	font-family: Corbel;
+}
+
+.descricoes {
+	-webkit-text-fill-color: black;
+    font-size: x-large;
 	margin: auto;
 	font-family: Corbel;
 }
