@@ -16,12 +16,20 @@ html, body {
 }
 
 #slideshow div {
-	height: 90vh;
+	height: 100vh;
 	background-color: black;
 }
 
-.item {
-	height: 65vh;
+.tit {
+	height: 30vh;
+	padding: 0px;
+}
+
+.desc {
+	display: inline-block;
+    width: 100%;
+    padding: 0px;
+	text-align: center;
 }
 
 #cont-bio div {
@@ -49,6 +57,14 @@ img {
 .carousel-inner {
 	
     margin: auto;
+}
+
+.row {
+	margin: 0px;
+}
+
+.container-fluid {
+	padding: 0px;
 }
 
 .categorias {
@@ -82,3 +98,12 @@ img {
 	background-color: #2d0132;
 }
 
+.menu {
+	height: 100%;
+}
+
+.map {
+	display: inline-block;
+	padding: 5px;
+	margin: 0% 5% 0% 5%;
+}
