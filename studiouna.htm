@@ -71,10 +71,76 @@
 			</div>
 			
 			<div id="menu" class="col-xs-2">
-			</div>
 			
-			<div id="conteudo" class="col-xs-10">
-				<div id="sobre" class="row exp">
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+								SOBRE O STUDIO
+							</a>
+						</div>
+						<div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+								PLANOS
+							</a>
+						</div>
+						<div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+								CONTATO E LOCAIS
+							</a>
+						</div>
+						<div id="collapseThree" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+								AUTORA
+							</a>
+						</div>
+						<div id="collapseFour" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+					<ul class="nav nav-pills flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="#sobre">SOBRE O STUDIO</a>
+						</li>
+						<div class="collapse"></div>
+						<li class="nav-item">
+							<a class="nav-link" href="#planos">PLANOS</a>
+						</li>
+						<div class="collapse"></div>
+						<li class="nav-item">
+							<a class="nav-link" href="#contato">LOCALIZAÇÃO E CONTATO</a>
+						</li>
+						<div class="collapse"></div>
+						<li class="nav-item">
+							<a class="nav-link" href="#autora">BIOGRAFIA</a>
+						</li>
+					</ul>
+				</nav> -->
+			
+			<div id="conteudo" class="col-xs-10" data-spy="scroll" data-target=".navbar" data-offset="50">
+				<div id="sobre" class="row sect">
 					<div class="tit">
 						<span class="center"><p class="categorias">SOBRE O STUDIO UNA</p></span>
 					</div>
@@ -86,21 +152,30 @@
 				</div>
 			
 		
-				<div id="planos" class="row exp">
+				<div id="planos" class="row sect">
 					<div class="tit">
 						<span class="center"><p class="categorias">CONHEÇA OS PLANOS</p></span>
 					</div>
-					<div id="planos-txt" class="col-xs-10 desc">
-						<div class="card">
+					<div id="planos-txt" class="col-xs-10 desc card-columns">
+						<div class="card bg-light text-dark">
+							<div class="card-body">
+								<span class="card-title">UNA COSA</span>
+							</div>
 						</div>
-						<div class="card">
+						<div class="card bg-light text-dark">
+							<div class="card-body">
+								<span class="card-title">UNA COSITA</span>
+							</div>
 						</div>
-						<div class="card">
+						<div class="card bg-light text-dark">
+							<div class="card-body">
+								<span class="card-title">UNA OTRA COSA</span>
+							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div id="contato" class="row exp">
+				<div id="contato" class="row sect">
 					<div class="tit">
 						<span class="center"><p class="categorias">NOSSAS UNIDADES</p></span>
 					</div>
@@ -114,7 +189,7 @@
 					</div>
 				</div>
 					
-				<div id="autora" class="row exp">
+				<div id="autora" class="row sect">
 					<div class="tit">
 						<span class="center"><p class="categorias">SOBRE A AUTORA</p></span>
 					</div>
@@ -138,22 +213,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		// função para o soft scroll
-		var fade = $('.jqRow');
-		
-		$(document).on('scroll', function() {
-			var scrollPos = $(document).scrollTop(); // posição atual do scroll
-			
-			fade.each(function() {
-				var $this = $(this),
-					offTop = $this.offset().top;
 				
-				if (scrollPos > offTop) $this.css('opacity', 1 - (scrollPos-offTop)/1000);
-				else if (scrollPos <= offTop) $this.css('opacity', 1 + (scrollPos-offTop)/1000);
-				
-			});
-		});
-		
 		$('#santos').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1236199606114!2d-46.33021718669915!3d-23.956068384488397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce030b6964f779%3A0xaba7173e799b2b69!2sAv.+Senador+Feij%C3%B3%2C+816+-+Encruzilhada%2C+Santos+-+SP%2C+11015-001!5e0!3m2!1spt-BR!2sbr!4v1544484393182');
 		$('#saopaulo').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2815980572836!2d-46.70662428670953!3d-23.63008428464877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50e0ad17bf47%3A0x8355b1f7c2597526!2sR.+Am%C3%A9rico+Brasiliense%2C+1881+-+Ch%C3%A1cara+Santo+Ant%C3%B4nio+(Zona+Sul)%2C+S%C3%A3o+Paulo+-+SP%2C+04715-005!5e0!3m2!1spt-BR!2sbr!4v1544484709551')
 		$('.endereco').attr({
@@ -161,6 +221,8 @@
 			'height': '300', 
 			'frameborder': '0',
 		})
+		
+		$('.collapse').collapse()
 	});
 </script>
 

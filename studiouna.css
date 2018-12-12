@@ -105,5 +105,18 @@ img {
 .map {
 	display: inline-block;
 	padding: 5px;
-	margin: 0% 5% 0% 5%;
+	margin: 0% 7% 0% 7%;
+}
+
+/*.card {
+	display: inline-block;
+	padding: 5px;
+	margin: 0% 1% 0% 1%;
+	border: 5px dotted grey;
+	width: 150px;
+	height: 200px;
+}*/
+
+.card-body {
+	height: 50px;
 }
