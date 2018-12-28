@@ -72,7 +72,7 @@
 			
 			<div id="menu" class="col-xs-2">
 			
-				<div id="accordion">
+				<div id="accordion" class="sticky">
 					<div class="card">
 						<div class="card-header">
 							<a class="card-link" data-toggle="collapse" href="#collapseOne">
@@ -222,7 +222,24 @@
 			'frameborder': '0',
 		})
 		
-		$('.collapse').collapse()
+		$('.collapse').collapse() ;
+				
+		$(document).scroll(function() {
+			
+			var scrollDistance = $(document).scrollTop();
+			var stickyMenu = $('#menu');
+			var carouselHeight = $('#slide').height();
+			
+			if(scrollDistance >= carouselHeight)  {
+				stickyMenu.css({
+					position: "fixed",
+							  "top" : "0",
+							  "left" : "0" 
+				});
+			} else {
+				stickyMenu.css("position", "relative");
+			}
+		});
 	});
 </script>
 
