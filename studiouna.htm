@@ -213,7 +213,10 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-				
+
+        
+        var docHeight = $(document).height();
+        
 		$('#santos').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1236199606114!2d-46.33021718669915!3d-23.956068384488397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce030b6964f779%3A0xaba7173e799b2b69!2sAv.+Senador+Feij%C3%B3%2C+816+-+Encruzilhada%2C+Santos+-+SP%2C+11015-001!5e0!3m2!1spt-BR!2sbr!4v1544484393182');
 		$('#saopaulo').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2815980572836!2d-46.70662428670953!3d-23.63008428464877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50e0ad17bf47%3A0x8355b1f7c2597526!2sR.+Am%C3%A9rico+Brasiliense%2C+1881+-+Ch%C3%A1cara+Santo+Ant%C3%B4nio+(Zona+Sul)%2C+S%C3%A3o+Paulo+-+SP%2C+04715-005!5e0!3m2!1spt-BR!2sbr!4v1544484709551')
 		$('.endereco').attr({
@@ -240,6 +243,9 @@
 				stickyMenu.css("position", "relative");
 			}
 		});
+        
+        
+        $('#menu').height() = docHeight;
 	});
 </script>
 
