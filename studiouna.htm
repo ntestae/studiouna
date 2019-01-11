@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-		<meta name="description" content="descrição X caracteres"/>
-		<meta name="keywords" content="lista de keywords separadas por virgula"/>
+		<meta name="description" content="Lorem ipsum dolor sit amet"/>
 		<meta name="author" content="Nayara AB Testae"/>
 		
 		
@@ -20,185 +19,149 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-		
-			<div id="slideshow" class="row">
-				<div id="slide" class="carousel slide" data-ride="carousel" data-interval="4000" style="padding: 0px">
-					<!-- indicadores inferiores -->
-					<ol class="carousel-indicators">
-						<li data-target="#slide" data-slide-to="0" class="active"></li>
-						<li data-target="#slide" data-slide-to="1"></li>
-						<li data-target="#slide" data-slide-to="2"></li>
-						<li data-target="#slide" data-slide-to="3"></li>
-						<li data-target="#slide" data-slide-to="4"></li>
-						<li data-target="#slide" data-slide-to="5"></li>
-					</ol>
-					
-					<!-- corpo dos slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="images/1.jpg" class="" alt=""/>
-						</div>
-						<div class="item">
-							<img src="images/2.jpg" class="" alt=""/>
-						</div>
-						<div class="item">
-							<img src="images/3.jpg" class="" alt=""/>
-						</div>
-						<div class="item">
-							<img src="images/4.jpg" class="" alt=""/>
-						</div>
-						<div class="item">
-							<img src="images/5.jpg" class="" alt=""/>
-						</div>
-						<div class="item">
-							<img src="images/6.jpg" class="" alt=""/>
-						</div>
-					</div>
-					
-					<!-- setas laterais -->
-					<a class="left carousel-control" href="#slide" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#slide" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
+            
+            <nav class="navbar navbar-expand-sm row">
+                <div id="cabecalho" class="row">
+                    <div id="itens" class="">
+                        <div id="i1" class="col-sm-2">
+                            <p>O STUDIO</p>
+                        </div>
+                        <div id="i2" class="col-sm-2">
+                            <p>PACOTES</p>
+                        </div>
+                        <div id="logo" class="col-sm-4 navbar-brand">
+                            <img src="images/logo.png" class="center"/>
+                        </div>
+                        <div id="i3" class="col-sm-2">
+                            <p>A ARQUITETA</p>
+                        </div>
+                        <div id="i4" class="col-sm-2">
+                            <p>CONTATO</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>                
+
 			
-			<div id="selecao-atual">
-			</div>
-			
-			<div id="menu" class="col-xs-2">
-			
-				<div id="accordion" class="sticky">
-					<div class="card">
-						<div class="card-header">
-							<a class="card-link" data-toggle="collapse" href="#collapseOne">
-								SOBRE O STUDIO
-							</a>
-						</div>
-						<div id="collapseOne" class="collapse show" data-parent="#accordion">
-							<div class="card-body">
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-								PLANOS
-							</a>
-						</div>
-						<div id="collapseTwo" class="collapse" data-parent="#accordion">
-							<div class="card-body">
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-								CONTATO E LOCAIS
-							</a>
-						</div>
-						<div id="collapseThree" class="collapse" data-parent="#accordion">
-							<div class="card-body">
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-								AUTORA
-							</a>
-						</div>
-						<div id="collapseFour" class="collapse" data-parent="#accordion">
-							<div class="card-body">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-				<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-					<ul class="nav nav-pills flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="#sobre">SOBRE O STUDIO</a>
-						</li>
-						<div class="collapse"></div>
-						<li class="nav-item">
-							<a class="nav-link" href="#planos">PLANOS</a>
-						</li>
-						<div class="collapse"></div>
-						<li class="nav-item">
-							<a class="nav-link" href="#contato">LOCALIZAÇÃO E CONTATO</a>
-						</li>
-						<div class="collapse"></div>
-						<li class="nav-item">
-							<a class="nav-link" href="#autora">BIOGRAFIA</a>
-						</li>
-					</ul>
-				</nav> -->
-			
-			<div id="conteudo" class="col-xs-10" data-spy="scroll" data-target=".navbar" data-offset="50">
-				<div id="sobre" class="row sect">
-					<div class="tit">
-						<span class="center"><p class="categorias">SOBRE O STUDIO UNA</p></span>
-					</div>
-					<div id="sobre-txt" class="col-xs-10 desc">
-						<p class="descricoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at est porta, 
-						placerat ipsum fermentum, sollicitudin risus. Aliquam malesuada arcu eget quam efficitur, ac venenatis 
-						nulla porttitor. Suspendisse a mi ut mi vestibulum blandit eu rutrum nisl.</p>
-					</div>
-				</div>
-			
-		
-				<div id="planos" class="row sect">
-					<div class="tit">
-						<span class="center"><p class="categorias">CONHEÇA OS PLANOS</p></span>
-					</div>
-					<div id="planos-txt" class="col-xs-10 desc card-columns">
-						<div class="card bg-light text-dark">
-							<div class="card-body">
-								<span class="card-title">UNA COSA</span>
-							</div>
-						</div>
-						<div class="card bg-light text-dark">
-							<div class="card-body">
-								<span class="card-title">UNA COSITA</span>
-							</div>
-						</div>
-						<div class="card bg-light text-dark">
-							<div class="card-body">
-								<span class="card-title">UNA OTRA COSA</span>
-							</div>
-						</div>
-					</div>
+        
+			<div id="conteudo" class="col-sm-12" >
+                
+                <div id="bg1" class="background"></div>
+                <div id="home" class="row sect">
+                    <div class="intro">
+                        <p class="i-cat">Studio UNA</p> 
+                        <p class="i-subcat">Arquitetura &Uacute;nica!</p>
+                    </div>
+                    <div id="button">
+                        <button id="gotoPac" >CONHEÇA OS PACOTES</button>
+                    </div>
+                </div>
+                
+                <div id="bg2" class="background"></div>
+                <div id="bio" class="row sect">
+                    <div id="bio-cont" class="col-sm-10">
+                        <div id="sobre-txt" class="col-sm-6">
+                            <p class="bio-subt">O Studio</p>
+                            <p class="s-desc">
+                                O Studio nasceu do desejo da arquiteta Bruna Domingues de não apenas criar ambientes de uma forma inovadora e flexível, mas principalmente de se adaptar às diferentes necessidades de seus clientes, e assim materializar seus sonhos de acordo com cada personalidade. Desta maneira, cada projeto tem seu elemento individual, sua arquitetura única!
+                            </p>
+                        </div>
+                        <div id="autora-txt" class="col-sm-6">
+                            <p class="bio-subt">A Arquiteta</p>
+                            <p class="descricoes">
+                                Arquiteta formada pela universidade presbiteriana Mackenzie em 2016, descobriu a paixão pela arquitetura cedo e iniciou os estudos na área antes da universidade, entrando para a escola Panamericana de arte e design, onde se formou em design de interiores aos 18 anos. Há 6 anos atua na área de interiores com o objetivo de inovar a arquiteta brasileira e renovar o mercado atual, dando uma nova identidade para o arquiteto no desenvolvimento do projeto e ambientação dos espaços criados.</p>
+                        </div>
+                    </div>
 				</div>
 				
+                
+                
+				<div id="planos" class="row sect">
+					<div class="pacotes">
+						<p class="s-cat">CONHEÇA OS PLANOS</p>                    
+                        <p class="subcat">Uma vez que se sabe onde aplicar o valor dentro do projeto, você consegue concluir seu objetivo de uma maneira muito mais eficaz.</p>
+					</div>
+					<div id="planos-txt" class="desc row">
+                        <div id="card-line">
+                            <div class="card">
+                                <img class="" src="images/chaves.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <span class="card-title">UNA MakeUp</span>
+                                    <span class="card-text">
+                                        Pacote indicado para espaços já prontos, que precisam apenas de uma repaginada, adquirindo novos artigos de decoração ou apenas reorganizar a disposição dos moveis.
+                                        - avaliação do local pela profissional 
+                                        - Proposta com as alterações 
+                                        - Acompanhamento a lojas para auxiliar o cliente 
+                                        - Ambientação final e fotografia do ambiente                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="" src="images/furadeira.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <span class="card-title">UNA Decora</span>
+                                    <span class="card-text">
+                                        A una decora é indicado para pessoas que não querem uma reforma completa, mas precisam renovar o espaço. Nesse pacote não são feitas grandes intervenções, como troca revestimento ou pedras, mas prevê novos pontos de elétrica , assim como pontos de iluminação e nova mobília.
+                                        - avaliação do(s) ambiente(s) pela profissional
+                                        - Projeto proposto com imagens 3D 
+                                        - Caderno de alterações com projeto definido
+                                        - Se o cliente desejar, também pode haver o acompanhamento das alterações propostas  
+                                        - Acompanhamento a lojas para auxiliar o cliente
+                                        - Finalização do(s) ambiente(s) e fotografia.                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="" src="images/martelo.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <span class="card-title">UNA Reforma</span>
+                                    <span class="card-text">
+                                        Indicado quando há necessidade de alterações maiores, como rebaixo de gesso, alteração na disposição de paredes, pontos elétricos e hidráulicos, novos revestimentos e pedras, criando um espaço novo!
+                                        - avaliação do(s) ambiente(s) pela profissional
+                                        - Projeto proposto com imagens 3D 
+                                        - Material para ser aprovado junto à prefeitura
+                                        - Caderno de alterações com projeto definido
+                                        - Acompanhamento das alterações propostas  
+                                        - Cronograma de obra 
+                                        - Orçamentos detalhados em empresas parceiras 
+                                        - Acompanhamento a lojas para auxiliar o cliente
+                                        - Finalização do(s) ambiente(s) e fotografia.                                       
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="" src="images/pincel.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <span class="card-title">UNA Constr&oacute;i</span>
+                                    <span class="card-text">
+                                        Voltado para pessoas que desejam construir do zero ou fazer anexos à construção já existente, mas que necessita de um estudo e acompanhamento mais detalhado.
+                                        - Avaliação do espaço a ser construído  
+                                        - Projeto proposto com imagens 3D 
+                                        - Material para ser aprovado junto à prefeitura
+                                        - Caderno de alterações com projeto definido
+                                        - Acompanhamento de obra
+                                        - Cronograma de obra 
+                                        - Orçamentos detalhados em empresas parceiras 
+                                        - Acompanhamento a lojas para auxiliar o cliente
+                                        - Finalização do(s) ambiente(s) e fotografia.                                       
+                                    </span>
+                                </div>
+                            </div>                        
+                        </div>
+					</div>
+				</div>
+                
 				<div id="contato" class="row sect">
 					<div class="tit">
-						<span class="center"><p class="categorias">NOSSAS UNIDADES</p></span>
+						<p class="categorias">Entre em contato conosco e agende uma reunião!</p>
 					</div>
-					<div id="contato-txt" class="col-xs-10 desc">
-						<div class="map">
+					<div id="contato-txt" class="desc">
+						<!-- <div class="map">
 							<iframe id="santos" class="endereco" src="" allowfullscreen></iframe>
-						</div>
+						</div> -->
 						<div class="map">
 							<iframe id="saopaulo" class="endereco" src="" allowfullscreen></iframe>
 						</div>
-					</div>
-				</div>
-					
-				<div id="autora" class="row sect">
-					<div class="tit">
-						<span class="center"><p class="categorias">SOBRE A AUTORA</p></span>
-					</div>
-					<div id="autora-txt" class="col-xs-10 desc">
-						<p class="descricoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at est porta, 
-						placerat ipsum fermentum, sollicitudin risus. Aliquam malesuada arcu eget quam efficitur, ac venenatis 
-						nulla porttitor. Suspendisse a mi ut mi vestibulum blandit eu rutrum nisl. Phasellus interdum est sodales 
-						turpis molestie, id maximus sem lacinia. Aenean aliquam sem quis sodales ullamcorper. Proin pulvinar 
-						interdum lorem, sed efficitur magna condimentum ut. Morbi quis imperdiet lacus. Ut eget diam metus. Nullam nec hendrerit mi.</p>
 					</div>
 				</div>
 			</div>
@@ -215,37 +178,36 @@
 	$(document).ready(function() {
 
         
-        var docHeight = $(document).height();
+        var totalWidth = $('#cabecalho').width();
         
-		$('#santos').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1236199606114!2d-46.33021718669915!3d-23.956068384488397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce030b6964f779%3A0xaba7173e799b2b69!2sAv.+Senador+Feij%C3%B3%2C+816+-+Encruzilhada%2C+Santos+-+SP%2C+11015-001!5e0!3m2!1spt-BR!2sbr!4v1544484393182');
+		// $('#santos').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1236199606114!2d-46.33021718669915!3d-23.956068384488397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce030b6964f779%3A0xaba7173e799b2b69!2sAv.+Senador+Feij%C3%B3%2C+816+-+Encruzilhada%2C+Santos+-+SP%2C+11015-001!5e0!3m2!1spt-BR!2sbr!4v1544484393182');
+        
 		$('#saopaulo').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2815980572836!2d-46.70662428670953!3d-23.63008428464877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50e0ad17bf47%3A0x8355b1f7c2597526!2sR.+Am%C3%A9rico+Brasiliense%2C+1881+-+Ch%C3%A1cara+Santo+Ant%C3%B4nio+(Zona+Sul)%2C+S%C3%A3o+Paulo+-+SP%2C+04715-005!5e0!3m2!1spt-BR!2sbr!4v1544484709551')
+        
 		$('.endereco').attr({
-			'width': '250', 
+			'width': '300', 
 			'height': '300', 
 			'frameborder': '0',
 		})
 		
 		$('.collapse').collapse() ;
-				
-		$(document).scroll(function() {
-			
-			var scrollDistance = $(document).scrollTop();
-			var stickyMenu = $('#menu');
-			var carouselHeight = $('#slide').height();
-			
-			if(scrollDistance >= carouselHeight)  {
-				stickyMenu.css({
-					position: "fixed",
-							  "top" : "0",
-							  "left" : "0" 
-				});
-			} else {
-				stickyMenu.css("position", "relative");
-			}
-		});
         
+        $('#itens').css({
+            width:  5 * totalWidth / 6 , 
+            
+        });
         
-        $('#menu').height() = docHeight;
+        $('#card-line').css({
+            width: 6 * totalWidth / 6 ,
+        })
+        
+        /*$('#cabecalho div:nth-child(2)').css({
+            marginRight: totalWidth / 3
+        }); */
+        
+        $('#cabecalho div:nth-child(5)').css({
+            marginRight: 0
+        });
 	});
 </script>
 
