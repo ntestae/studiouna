@@ -1,44 +1,43 @@
 @font-face {
   font-family: "quick-l";
-  src: url(fonts/Quicksand_Light.otf) format('opentype');
+  src: url(/fonts/Quicksand_Light.otf) format('opentype');
 }
 
 @font-face {
   font-family: "quick-lo";
-  src: url(fonts/Quicksand_Light_Oblique.otf) format('opentype');
+  src: url(/fonts/Quicksand_Light_Oblique.otf) format('opentype');
 }
 
 @font-face {
   font-family: "quick-k";
-  src: url(fonts/Quicksand_Book.otf) format('opentype');
+  src: url(/fonts/Quicksand_Book.otf) format('opentype');
 }
 
 @font-face {
   font-family: "quick-ko";
-  src: url(fonts/Quicksand_Book_Oblique.otf) format('opentype');
+  src: url(/fonts/Quicksand_Book_Oblique.otf) format('opentype');
 }
 
 @font-face {
   font-family: "quick-b";
-  src: url(fonts/Quicksand_Bold.otf) format('opentype');
+  src: url(/fonts/Quicksand_Bold.otf) format('opentype');
 }
 
 @font-face {
   font-family: "quick-bo";
-  src: url(fonts/Quicksand_Bold_Oblique.otf) format('opentype');
+  src: url(/fonts/Quicksand_Bold_Oblique.otf) format('opentype');
 }
 
 
 // ------------------------------------------
 #autora-txt {    
     display: inline-block;
-    margin: auto;
-    text-align: justify;
 }
 
 #autora-txt p {    
     display: inline-block;
-    max-width: 350px;
+    max-width: 430px;	
+    text-align: justify;
 }
 
 .b-desc {
@@ -48,34 +47,40 @@
 .background {
     width: 100%;
     display: inline-block;    
-    height: 90vh;
-    opacity: 0.3;
+    height: 100vh;
     position: absolute;
     left: 0;
 }
 
-.baixo {
-	
-}
-
 #bg1 {
-    background: url("images/nolanissac.jpg") no-repeat;      
+    background: url("/images/BG1.png") no-repeat;      
     background-size: cover;
+	height: 100vh;
 }
 
 #bg2 {
-    background: url("images/andrejlisakov.jpg") no-repeat;   
+    background: url("/images/BG3.png") no-repeat;   
     background-size: cover; 
 }
 
 #bg3 {
-    background: url("images/joannakosinska.jpg") no-repeat;   
+    background: url("/images/BG2.png") no-repeat;   
+    background-size: cover; 
+}
+
+#bg4 {
+    background: url("/images/BG3.png") no-repeat;   
     background-size: cover; 
 }
 
 #bio-cont{
     display: inline-block;
-    margin: 10% 0 0 11.5%;
+    margin: 10% 0 0 0;
+	width: 100%;
+	padding: 0;
+}
+
+#bio-cont div {
     padding: 0;
 }
 
@@ -105,6 +110,12 @@
     width: 235px;
 }
 
+.c-ctt {
+    font-family: "quick-k", "Trebuchet MS";
+    font-size: 12px;
+    width: 235px;
+}
+
 #cabecalho {
     min-height: 30px;
     height: 50px;
@@ -121,6 +132,12 @@
     padding: 0;
 }
 
+#cabecalho a:hover {
+	opacity: 0.5;
+	background-color: #030732;
+	text-decoration: none;
+}
+
 #cabecalho div {
     height: inherit;
 }
@@ -131,8 +148,7 @@
 	top: 50%;    
 	transform: translateY(-50%);
 	text-align: center;
-	display: block;
-    color: #ffffdb;
+    color: #FFBA00;
 }
 
 .caixa {
@@ -143,6 +159,20 @@
 
 .card {
 	height: 100%;
+}
+
+.card-icon {
+    display: inline-block;
+    min-width: 60px;
+	max-width: 70%;
+    height: 65%;	
+}
+
+.card-logo {
+    display: inline-block;
+    min-width: 100px;
+	width: 100%;
+    height: 35%;	
 }
 
 .center {
@@ -162,20 +192,21 @@
     padding-top: 7%;
 }
 
+#contato-txt {
+	height: 90%;
+}
+
 #conteudo {
     position: relative;
     padding: 0;
 }
 
-.desc {
-	display: inline-block;
-    width: 80vw;
-    padding: 3% 15% 0 35%;
-	text-align: justify;
+.dir {
+	margin-right: 0;
 }
 
 #gotoPac {
-    border: 0px solid;
+    border: 0 solid;
     border-radius: 30px;
     background-color: #030732;
     opacity: 0.8;
@@ -184,7 +215,7 @@
 }
 
 #home {
-    height: 100vh;    
+    height: 100vh; 
 }
 
 html, body { 
@@ -221,6 +252,15 @@ html, body {
     height: 50vw;
 }
 
+#ino-icon img {
+	margin-top: 15px;
+	width: 85%;
+}
+
+#ino-logo img {
+	width: 85%;
+}
+
 .intro {
     margin: 10% 0 0 0;
     display: inline-block;
@@ -233,6 +273,10 @@ html, body {
     font-family: "quick-k", "Trebuchet MS";
     margin: auto;
     max-width: 80vw;
+}
+
+.little {
+	font-size: 8px;
 }
 
 .logo {
@@ -250,6 +294,10 @@ html, body {
 	margin: 0% 7% 0% 7%;
 }
 
+.mbottom {
+	margin-bottom: 5px;
+}
+
 .metade {
     padding: 0px;
 }
@@ -263,7 +311,7 @@ nav {
     position: relative;
     min-height: 30px;
     height: 50px;
-    border: 0px solid transparent;
+    border: 0 solid transparent;
     border-radius: 0;
 }
 
@@ -275,21 +323,18 @@ p {
 .p-subcat {
     font-family: "quick-k", "Trebuchet MS";
     font-size: 17px;
+	color: white;
 }
 
 .pack {
     padding: 0;
-    margin: 3% 3% 3% 0%;
+    margin: 0% 2% 2% 0%;
     border: 1px ridge black;
     border-radius: 5px;
     width: 47%;
     min-height: 45px;
-	height: 150px;
+	height: 178px;
     background-color: white;
-}
-
-.pack-img {
-    margin: 10px 0 0 10px;
 }
 
 .pack-line {
@@ -298,20 +343,27 @@ p {
 }
 
 .pack-txt {
-    font-size: 9px;
-    text-align: justify;
+	margin: 15px 0px 10px 0px;
+    font-size: 10px;
+	font-weight: bold;
+    text-align: left;
 }
 
 .pacotes {
-    margin: 5% 0 0 0;
+    margin: 3% 0 0 0;
 }
 
 #planos-txt {
-    margin: 1% 0 0 0;
+    margin: 5% 0 0 0;
+}
+
+#rodape {
+	height: 20px;
 }
 
 #rodape div {
-	height: 15vh;
+	text-align: center;
+	font-size: 9px;
 }
 
 .row {
@@ -321,13 +373,13 @@ p {
 
 .sect {    
     position: relative;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
 #sobre-txt {    
     display: inline-block;
-    margin: auto;
+    margin: 0 0 0 0;
     text-align: justify;
 }
 
@@ -336,19 +388,15 @@ p {
     max-width: 350px;
 }
 
-#ino-icon {
-	background-image: url("images/icon_inova.png");
-	background-size: cover;
+.titulo {
+	font-size: 11px;
 }
 
 .x {
-    display: inline-block;
-	width: 65%;
-    height: 65%;
+	margin: 30px 0px 0px 20px;
+    width: 90%;
 }
 
 .y {
-    display: inline-block;
-	width: 65%;
-    height: 35%;
+	width: 100%;
 }
