@@ -45,7 +45,8 @@ pre {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects; }
+  -webkit-text-decoration-skip: objects; 
+  display: inline-block; }
 
 a:active,
 a:hover {
@@ -119,7 +120,8 @@ textarea {
 
 button,
 input {
-  overflow: visible; }
+  overflow: visible; 
+  display: inline-block; }
 
 button,
 select {
@@ -613,7 +615,7 @@ pre {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
+  /*padding-right: 15px;
   padding-left: 15px; }
   @media (min-width: 576px) {
     .container {
@@ -630,7 +632,8 @@ pre {
   @media (min-width: 1200px) {
     .container {
       padding-right: 15px;
-      padding-left: 15px; } }
+      padding-left: 15px; } */ } 
+
   @media (min-width: 576px) {
     .container {
       width: 540px;
@@ -652,7 +655,7 @@ pre {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
+  /*padding-right: 15px;
   padding-left: 15px; }
   @media (min-width: 576px) {
     .container-fluid {
@@ -669,7 +672,7 @@ pre {
   @media (min-width: 1200px) {
     .container-fluid {
       padding-right: 15px;
-      padding-left: 15px; } }
+      padding-left: 15px; } */}
 
 .row {
   display: flex;
